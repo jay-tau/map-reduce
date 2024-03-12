@@ -1,0 +1,83 @@
+services:
+  reducer:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    environment:
+      - IS_REDUCER=1
+    depends_on:
+      - mapper1
+  
+  
+  mapper1:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8081:80
+    environment:
+      - IS_REDUCER=0
+  mapper2:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8082:80
+    environment:
+      - IS_REDUCER=0
+  mapper3:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8083:80
+    environment:
+      - IS_REDUCER=0
+  mapper4:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8084:80
+    environment:
+      - IS_REDUCER=0
+  mapper5:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8085:80
+    environment:
+      - IS_REDUCER=0
+  mapper6:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8086:80
+    environment:
+      - IS_REDUCER=0
+  mapper7:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8087:80
+    environment:
+      - IS_REDUCER=0
+  mapper8:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8088:80
+    environment:
+      - IS_REDUCER=0
+  mapper9:
+    image: mapreduce
+    volumes:
+      - ./data:/code/data
+    # ports:
+    #   - 8089:80
+    environment:
+      - IS_REDUCER=0
